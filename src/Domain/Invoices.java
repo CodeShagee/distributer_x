@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
  *
  * @author Shiyanrox
  */
+
 public class Invoices {
 
     private int InvoNo;

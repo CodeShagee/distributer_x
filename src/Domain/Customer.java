@@ -12,7 +12,8 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Shiyanrox
+ * @author Shiyanrox 
+ * also known as code shagee
  */
 public class Customer {
     private int C_id;

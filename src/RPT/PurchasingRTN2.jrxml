@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f456723b-e606-447f-9c82-04cd8901f915">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="In_date" class="java.lang.String"/>
+	<parameter name="pono" class="java.lang.String"/>
+	<parameter name="Total" class="java.lang.String"/>
+	<parameter name="GRNno" class="java.lang.String"/>
+	<parameter name="Vendor" class="java.lang.String"/>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<field name="COLUMN_3" class="java.lang.String"/>
+	<field name="COLUMN_4" class="java.lang.String"/>
+	<field name="COLUMN_5" class="java.lang.String"/>
+	<field name="COLUMN_6" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="136" splitType="Stretch">
+			<staticText>
+				<reportElement x="342" y="82" width="112" height="20" uuid="34716090-c924-470f-9e8f-0095d8bbf5aa"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GRN No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="42" width="233" height="20" uuid="8d2a52cc-acd4-4bcf-92bd-0f122bc0fb66"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[No. 106, Dharmapala Mawatha,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="62" width="112" height="20" uuid="7139c560-e8cd-4a17-86c4-0ddc08e6acf8"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="342" y="42" width="112" height="20" uuid="b46281f2-571f-487c-8a29-17f9c0134815"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Return Notice No:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="5" y="2" width="233" height="40" uuid="8fc545d3-f2e2-4f9d-b93e-0354e1df7e15"/>
+				<textElement>
+					<font fontName="AR DESTINE" size="28"/>
+				</textElement>
+				<text><![CDATA[PADMA AGENCY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="3" y="62" width="233" height="20" uuid="76803ec4-4e02-4fd5-b333-5bc1b0caf6b7"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kegalle.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="106" width="61" height="20" uuid="72807912-d7f5-4200-a2a6-b47980718662"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vendor :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="2" width="238" height="40" uuid="1c670d34-fbdf-4670-b667-319891ca11dd"/>
+				<textElement>
+					<font fontName="Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PURCHASE RETURN NOTICE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="62" width="100" height="20" uuid="0fcf4f7f-c202-424b-adf2-ffa5fe0637c7"/>
+				<textFieldExpression><![CDATA[$P{In_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="42" width="100" height="20" uuid="d0f8447f-45e9-499f-93d1-ed2020f96156"/>
+				<textFieldExpression><![CDATA[$P{pono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="82" width="100" height="20" uuid="f95bbec1-be01-4cdc-a756-411c9b046cdb"/>
+				<textFieldExpression><![CDATA[$P{GRNno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="69" y="106" width="386" height="20" uuid="2e62e2ee-ae54-41ed-a939-e04cd5351005"/>
+				<textFieldExpression><![CDATA[$P{Vendor}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="11" y="0" width="34" height="20" uuid="4e2a2613-94c5-4da8-8391-7ae473ae21f8"/>
+				<text><![CDATA[#]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="0" width="45" height="20" uuid="ea3a7210-2b33-454b-96e6-15484832a168"/>
+				<text><![CDATA[PID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="90" y="0" width="79" height="20" uuid="593ea3e0-5e36-4287-b04b-d18c277dd178"/>
+				<text><![CDATA[Batch]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="0" width="159" height="20" uuid="42813917-a3b5-43b9-a4a5-14cc3300aad3"/>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="0" width="79" height="20" uuid="81ccdcfb-b8e8-4c37-ba9d-27a851b58861"/>
+				<text><![CDATA[BPrice]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="0" width="55" height="20" uuid="870905cd-4bbc-426e-8c53-fa7197df95e3"/>
+				<text><![CDATA[Qty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="0" width="79" height="20" uuid="46f3c79d-d563-445c-be69-f10657006a0a"/>
+				<text><![CDATA[Amount]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="11" y="0" width="34" height="20" uuid="321a7186-1cb0-446d-b644-bddce74e6730"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="0" width="45" height="20" uuid="c4d89d59-6149-41f1-8321-0f91449e2b17"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="79" height="20" uuid="88e270df-504f-4fde-bf4f-a364c2296ca5"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="169" y="0" width="159" height="20" uuid="7fd4bc0d-3781-4cca-9779-af63d3fbe7eb"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="329" y="0" width="79" height="20" uuid="c253b49d-2c25-4cb6-abf5-fe2b4d1b4f7d"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="0" width="55" height="20" uuid="5c4614c8-1cdf-4f3d-a103-17ab9c5c5c2a"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="0" width="79" height="20" uuid="2857296e-e2ab-4ca7-bb35-81c830185636"/>
+				<textFieldExpression><![CDATA[$F{COLUMN_6}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="11" y="0" width="542" height="1" uuid="b7585a2a-b71c-41d0-80f7-b9fa01fe3e24"/>
+			</line>
+			<line>
+				<reportElement x="11" y="19" width="542" height="1" uuid="575cf9ad-ca13-4301-8ae6-5770a5434061"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="455" y="11" width="100" height="20" uuid="a316a3bc-e124-4df3-9c4d-e6984b2af716"/>
+				<textFieldExpression><![CDATA[$P{Total}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="393" y="11" width="61" height="20" uuid="92417556-db95-4cfc-be18-a522a3bda457"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total :]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
